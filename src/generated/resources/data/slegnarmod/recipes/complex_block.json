@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "slegnar",
+  "key": {
+    "d": {
+      "item": "minecraft:iron_ingot"
+    },
+    "s": {
+      "item": "minecraft:ender_eye"
+    },
+    "x": {
+      "tag": "forge:gems/diamond"
+    }
+  },
+  "pattern": [
+    "dsd",
+    "dxd",
+    "ddd"
+  ],
+  "result": {
+    "item": "slegnarmod:complex_block"
+  },
+  "show_notification": true
+}

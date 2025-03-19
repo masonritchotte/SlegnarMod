@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "slegnarmod:block/complex_block"
+    }
+  }
+}
