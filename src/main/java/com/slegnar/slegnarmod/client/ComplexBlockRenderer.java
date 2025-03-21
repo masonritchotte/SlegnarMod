@@ -38,7 +38,7 @@ public class ComplexBlockRenderer implements BlockEntityRenderer<ComplexBlockEnt
                 ItemRenderer itemRenderer = Minecraft.getInstance().getItemRenderer();
                 long millis = System.currentTimeMillis();
 
-                poseStack.pushPose();
+                // poseStack.pushPose();
                 poseStack.pushPose();
                 poseStack.scale(.5f, .5f, .5f);
                 poseStack.translate(1f, 2.8f, 1f);
@@ -47,9 +47,9 @@ public class ComplexBlockRenderer implements BlockEntityRenderer<ComplexBlockEnt
                 itemRenderer.renderStatic(stack, ItemDisplayContext.FIXED, LightTexture.FULL_BRIGHT, combinedOverlay, poseStack, bufferSource, Minecraft.getInstance().level, 0);
                 poseStack.popPose();
 
-                poseStack.translate(0, 0.5f, 0);
-                renderBillBoardQuadBright(poseStack, bufferSource.getBuffer(RenderType.translucent()), 0.5f, LIGHT);
-                poseStack.popPose();
+                // poseStack.translate(0, 0.5f, 0);
+                // renderBillBoardQuadBright(poseStack, bufferSource.getBuffer(RenderType.translucent()), 0.5f, LIGHT);
+                // poseStack.popPose();
             }
         });
     }
