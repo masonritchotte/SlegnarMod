@@ -2,6 +2,7 @@ package com.slegnar.slegnarmod.client;
 
 import com.slegnar.slegnarmod.Registration;
 import com.slegnar.slegnarmod.SlegnarMod;
+import com.slegnar.slegnarmod.client.entities.AmethystGolem;
 
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

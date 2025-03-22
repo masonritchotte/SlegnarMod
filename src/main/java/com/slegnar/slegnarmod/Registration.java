@@ -1,7 +1,7 @@
 package com.slegnar.slegnarmod;
 
 import com.slegnar.slegnarmod.blocks.SimpleBlock;
-import com.slegnar.slegnarmod.client.AmethystGolem;
+import com.slegnar.slegnarmod.client.entities.AmethystGolem;
 
 import javax.swing.text.html.parser.Entity;
 

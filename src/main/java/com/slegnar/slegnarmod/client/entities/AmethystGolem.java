@@ -1,4 +1,4 @@
-package com.slegnar.slegnarmod.client;
+package com.slegnar.slegnarmod.client.entities;
 
 import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.Entity;

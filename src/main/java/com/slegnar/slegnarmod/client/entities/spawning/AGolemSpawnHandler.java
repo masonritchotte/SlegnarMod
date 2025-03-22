@@ -1,6 +1,7 @@
-package com.slegnar.slegnarmod.client;
+package com.slegnar.slegnarmod.client.entities.spawning;
 
 import com.slegnar.slegnarmod.Registration;
+import com.slegnar.slegnarmod.client.entities.AmethystGolem;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;

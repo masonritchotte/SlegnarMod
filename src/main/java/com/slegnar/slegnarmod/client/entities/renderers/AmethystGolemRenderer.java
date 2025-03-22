@@ -1,8 +1,9 @@
-package com.slegnar.slegnarmod.client;
+package com.slegnar.slegnarmod.client.entities.renderers;
 
 import com.slegnar.slegnarmod.SlegnarMod;
-import com.slegnar.slegnarmod.client.AmethystGolemModel;
-import com.slegnar.slegnarmod.client.AmethystGolem;
+import com.slegnar.slegnarmod.client.entities.AmethystGolem;
+import com.slegnar.slegnarmod.client.entities.models.AmethystGolemModel;
+
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.renderer.entity.EntityRendererProvider.Context;
 import net.minecraft.client.renderer.entity.MobRenderer;

@@ -1,5 +1,5 @@
 // Save this class in your mod and generate all required imports
-package com.slegnar.slegnarmod.client;
+package com.slegnar.slegnarmod.client.entities.animations;
 
 import net.minecraft.client.animation.AnimationChannel;
 import net.minecraft.client.animation.AnimationDefinition;
