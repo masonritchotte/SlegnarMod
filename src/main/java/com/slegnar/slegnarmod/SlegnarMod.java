@@ -37,7 +37,6 @@ public class SlegnarMod {
     public SlegnarMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         Registration.init(modEventBus);
-
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(Registration::addCreative);
         modEventBus.addListener(DataGeneration::generate);
