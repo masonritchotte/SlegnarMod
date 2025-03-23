@@ -2,8 +2,10 @@ package com.slegnar.slegnarmod.client;
 
 import com.slegnar.slegnarmod.Registration;
 import com.slegnar.slegnarmod.SlegnarMod;
+import com.slegnar.slegnarmod.client.entities.models.RedstoneGolemModel;
 import com.slegnar.slegnarmod.client.entities.models.AmethystGolemModel;
 import com.slegnar.slegnarmod.client.entities.renderers.AmethystGolemRenderer;
+import com.slegnar.slegnarmod.client.entities.renderers.RedstoneGolemRenderer;
 
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelLayers;
@@ -26,10 +28,12 @@ public class ClientSetup {
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
         EntityRenderers.register(Registration.AMETHYST_GOLEM.get(), AmethystGolemRenderer::new);
+        EntityRenderers.register(Registration.REDSTONE_GOLEM.get(), RedstoneGolemRenderer::new);
     }
 
     @SubscribeEvent
     public static void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(new ModelLayerLocation(new ResourceLocation(SlegnarMod.MODID, "amethyst_golem_layer"), "main"), AmethystGolemModel::createBodyLayer);
+        event.registerLayerDefinition(new ModelLayerLocation(new ResourceLocation(SlegnarMod.MODID, "redstone_golem_layer"), "main"), RedstoneGolemModel::createBodyLayer);
     }
 }

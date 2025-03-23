@@ -2,6 +2,7 @@ package com.slegnar.slegnarmod;
 
 import com.slegnar.slegnarmod.blocks.SimpleBlock;
 import com.slegnar.slegnarmod.client.entities.AmethystGolem;
+import com.slegnar.slegnarmod.client.entities.RedstoneGolem;
 
 import javax.swing.text.html.parser.Entity;
 
@@ -27,6 +28,7 @@ public class Registration {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, SlegnarMod.MODID);
     //For Entities
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, SlegnarMod.MODID);
+    // Removed duplicate ENTITY_TYPESB
 
     public static final RegistryObject<SimpleBlock> SIMPLE_BLOCK = BLOCKS.register("simple_block", SimpleBlock::new);
     public static final RegistryObject<Item> SIMPLE_BLOCK_ITEM = ITEMS.register("simple_block", () ->
@@ -41,6 +43,9 @@ public class Registration {
     //For Entities
     public static final RegistryObject<EntityType<AmethystGolem>> AMETHYST_GOLEM = ENTITY_TYPES.register("amethyst_golem", () ->
             EntityType.Builder.of(AmethystGolem::new, MobCategory.CREATURE).sized(1.25F, 1.5F).build("amethyst_golem"));
+
+    public static final RegistryObject<EntityType<RedstoneGolem>> REDSTONE_GOLEM = ENTITY_TYPES.register("redstone_golem", () ->
+            EntityType.Builder.of(RedstoneGolem::new, MobCategory.CREATURE).sized(1.0F, 1.0F).build("redstone_golem"));
 
     public static void init(IEventBus modEventBus) {
         BLOCKS.register(modEventBus);
